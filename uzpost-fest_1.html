@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UZPOST Fest — Давай встретимся?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #182498;
+    --card-text: #183e98;
+    --border: #e3f1ff;
+    --page-bg: #eef2f7;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--page-bg);
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+  }
+  .screen {
+    position: relative;
+    width: 402px;
+    height: 874px;
+    max-width: 100%;
+    aspect-ratio: 402 / 874;
+    background: linear-gradient(to bottom, #fdfdfd, #f6f9fd);
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(24,36,152,0.12);
+    border-radius: 12px;
+  }
+
+  /* --- logo --- */
+  .logo {
+    position: absolute;
+    left: 21.64%;
+    top: 5.26%;
+    width: 56.72%;
+    height: 7.78%;
+  }
+  .logo img { width: 100%; height: 100%; object-fit: contain; }
+
+  /* --- postmark / stamp --- */
+  .stamp-wrap {
+    position: absolute;
+    left: 57.71%;   /* 232/402 */
+    top: 12.59%;    /* 110/874 */
+    width: 46.88%;  /* 188.458/402 */
+    height: 14.53%; /* 126.969/874 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stamp-inner {
+    width: 43.84%;  /* relative to screen width via px below */
+    transform: rotate(-7.54deg);
+  }
+  .stamp-inner img { display: block; width: 100%; height: auto; }
+
+  /* --- heading (exported as vector outlines from Figma — exact font shape, no @font-face needed) --- */
+  .heading {
+    position: absolute;
+    left: 45.254px;
+    top: 165.214px;
+    width: 283.301px;
+    height: 113.827px;
+  }
+  .heading img { display: block; width: 100%; height: 100%; }
+
+  /* --- menu cards --- */
+  .menu {
+    position: absolute;
+    left: 31px;
+    top: 305px;
+    width: 339px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card {
+    width: 100%;
+    background: #fff;
+    border: 0.5px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow:
+      0px 6px 12.3px rgba(131,158,201,0.09),
+      0px 23px 9px rgba(131,158,201,0.01),
+      0px 35px 10px rgba(131,158,201,0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .card-left { display: flex; align-items: center; gap: 10px; }
+  .icon-box {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .icon-box img { display: block; }
+  .card-text {
+    color: var(--card-text);
+    font-size: 18px;
+    line-height: 1.05;
+    font-weight: 400;
+  }
+  .card-text p { margin: 0; }
+  .card-simple { font-size: 20px; color: var(--card-text); line-height: 1; }
+  .chevron { flex-shrink: 0; width: 24px; height: 24px; }
+  .chevron img { width: 100%; height: 100%; transform: scaleX(-1); }
+
+  /* --- bottom illustration --- */
+  .illustration {
+    position: absolute;
+    left: 50%;
+    top: 710px;
+    transform: translateX(-50%);
+    width: 226px;
+    height: 112px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .illustration img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* --- footer --- */
+  .footer {
+    position: absolute;
+    left: 50%;
+    top: 830px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    white-space: nowrap;
+  }
+  .footer span {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    color: var(--navy);
+    line-height: 0.8;
+  }
+  .footer .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--navy);
+    opacity: 0.55;
+  }
+</style>
+</head>
+<body>
+
+  <div class="screen">
+
+    <div class="logo">
+      <img src="https://www.figma.com/api/mcp/asset/24878909-dcef-4eb9-ac7f-d6164a449c16.svg" alt="UZPOST Fest" />
+    </div>
+
+    <div class="stamp-wrap">
+      <div class="stamp-inner" style="width:176.234px;">
+        <img src="https://www.figma.com/api/mcp/asset/6c1eaf1b-a9f8-440d-8315-c54be7c48844.svg" alt="09.10.11 Oktabr stamp" />
+      </div>
+    </div>
+
+    <div class="heading">
+      <img src="https://www.figma.com/api/mcp/asset/1ba63a89-24fd-42f3-9ebc-189fcbbd7e94.svg" alt="Давай встретимся?" />
+    </div>
+
+    <div class="menu">
+      <a class="card" href="#">
+        <div class="card-left">
+          <div class="icon-box"><img width="32" height="32" src="https://www.figma.com/api/mcp/asset/870ded0e-c607-4757-bc76-60bda08c0c92.svg" alt=""></div>
+          <div class="card-text"><p>Принять участие</p><p>в конкурсе детских рисунков</p></div>
+        </div>
+        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="card-left">
+          <div class="icon-box"><img width="32" height="32" src="https://www.figma.com/api/mcp/asset/972b7009-a063-443b-a692-aa436a719459.svg" alt=""></div>
+          <div class="card-text"><p>Принять участие</p><p>в маркете</p></div>
+        </div>
+        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="card-left">
+          <div class="icon-box"><img width="28" height="28" src="https://www.figma.com/api/mcp/asset/b0a4d0f3-2eaa-495f-a02e-db1840e00540.svg" alt=""></div>
+          <div class="card-text"><p>Записаться</p><p>на мастер-класс</p></div>
+        </div>
+        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+      </a>
+
+      <a class="card" href="#">
+        <div class="card-left">
+          <div class="icon-box"><img width="24" height="24" src="https://www.figma.com/api/mcp/asset/927b4bd0-7848-4af1-8726-0189f842a0fc.svg" alt=""></div>
+          <div class="card-text"><p>Записаться</p><p>на лекцию</p></div>
+        </div>
+        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+      </a>
+
+      <a class="card" href="#">
+        <span class="card-simple">Связаться с нами</span>
+        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+      </a>
+    </div>
+
+    <div class="illustration">
+      <img src="https://www.figma.com/api/mcp/asset/fd2031fa-c6c4-46de-9bcc-cac92ac3c180.png" alt="Здание главпочтамта" />
+    </div>
+
+    <div class="footer">
+      <span>Ташкент</span>
+      <div class="dot"></div>
+      <span>Главпочтамт</span>
+      <div class="dot"></div>
+      <span>2026</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
