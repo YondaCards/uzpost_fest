@@ -50,22 +50,15 @@
   }
   .logo img { width: 100%; height: 100%; object-fit: contain; }
 
-  /* --- postmark / stamp --- */
+  /* --- postmark / stamp (PNG export from Figma — tilt is baked into the image, no CSS rotation) --- */
   .stamp-wrap {
     position: absolute;
     left: 57.71%;   /* 232/402 */
     top: 12.59%;    /* 110/874 */
-    width: 46.88%;  /* 188.458/402 */
-    height: 14.53%; /* 126.969/874 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 46.52%;  /* 187/402 */
+    height: 14.42%; /* 126/874 */
   }
-  .stamp-inner {
-    width: 43.84%;  /* relative to screen width via px below */
-    transform: rotate(-7.54deg);
-  }
-  .stamp-inner img { display: block; width: 100%; height: auto; }
+  .stamp-wrap img { display: block; width: 100%; height: 100%; object-fit: contain; }
 
   /* --- heading (exported as vector outlines from Figma — exact font shape, no @font-face needed) --- */
   .heading {
@@ -177,9 +170,7 @@
     </div>
 
     <div class="stamp-wrap">
-      <div class="stamp-inner" style="width:176.234px;">
-        <img src="https://www.figma.com/api/mcp/asset/6c1eaf1b-a9f8-440d-8315-c54be7c48844.svg" alt="09.10.11 Oktabr stamp" />
-      </div>
+      <img src="assets/stamp.png" alt="09.10.11 Oktabr stamp" />
     </div>
 
     <div class="heading">
