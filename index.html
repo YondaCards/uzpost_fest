@@ -108,7 +108,10 @@
     justify-content: center;
     overflow: hidden;
   }
-  .icon-box img { display: block; }
+  .icon-box { position: relative; }
+  .ico { position: absolute; overflow: hidden; }
+  .ico > span { position: absolute; }
+  .ico img { display: block; width: 100%; height: 100%; }
   .card-text {
     color: var(--card-text);
     font-size: 18px;
@@ -166,7 +169,7 @@
   <div class="screen">
 
     <div class="logo">
-      <img src="https://www.figma.com/api/mcp/asset/24878909-dcef-4eb9-ac7f-d6164a449c16.svg" alt="UZPOST Fest" />
+      <img src="assets/logo.svg" alt="UZPOST Fest" />
     </div>
 
     <div class="stamp-wrap">
@@ -181,48 +184,48 @@
       <!-- TODO: вставить ссылку — конкурс детских рисунков -->
       <a class="card" href="https://forms.gle/Q44jdDnxieLdQEjr6">
         <div class="card-left">
-          <div class="icon-box"><img width="32" height="32" src="https://www.figma.com/api/mcp/asset/870ded0e-c607-4757-bc76-60bda08c0c92.svg" alt=""></div>
+          <div class="icon-box"><div class="ico" style="width:32px;height:32px;left:8.5px;top:8.5px"><span style="inset:0 3.36% 0 3.37%"><img src="assets/icon-contest.svg" alt=""></span></div></div>
           <div class="card-text"><p>Принять участие</p><p>в конкурсе детских рисунков</p></div>
         </div>
-        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+        <div class="chevron"><img src="assets/chevron.svg" alt=""></div>
       </a>
 
       <!-- TODO: вставить ссылку — участие в маркете -->
       <a class="card" href="https://forms.gle/o2Goi5PyFdBMQDqb9">
         <div class="card-left">
-          <div class="icon-box"><img width="32" height="32" src="https://www.figma.com/api/mcp/asset/972b7009-a063-443b-a692-aa436a719459.svg" alt=""></div>
+          <div class="icon-box"><div class="ico" style="width:32px;height:32px;left:8.5px;top:8.5px"><span style="inset:0 0.26%"><img src="assets/icon-market.svg" alt=""></span></div></div>
           <div class="card-text"><p>Принять участие</p><p>в маркете</p></div>
         </div>
-        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+        <div class="chevron"><img src="assets/chevron.svg" alt=""></div>
       </a>
 
       <!-- TODO: вставить ссылку — запись на мастер-класс -->
       <a class="card" href="https://forms.gle/8sijSHYoSpRdwyt2A">
         <div class="card-left">
-          <div class="icon-box"><img width="28" height="28" src="https://www.figma.com/api/mcp/asset/b0a4d0f3-2eaa-495f-a02e-db1840e00540.svg" alt=""></div>
+          <div class="icon-box"><div class="ico" style="width:28px;height:28px;left:10.5px;top:10.5px"><span style="inset:0 2.33%"><img src="assets/icon-masterclass.svg" alt=""></span></div></div>
           <div class="card-text"><p>Записаться</p><p>на мастер-класс</p></div>
         </div>
-        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+        <div class="chevron"><img src="assets/chevron.svg" alt=""></div>
       </a>
 
       <!-- TODO: вставить ссылку — запись на лекцию -->
       <a class="card" href="https://forms.gle/xnDUMCZxEQBVBESf6">
         <div class="card-left">
-          <div class="icon-box"><img width="24" height="24" src="https://www.figma.com/api/mcp/asset/927b4bd0-7848-4af1-8726-0189f842a0fc.svg" alt=""></div>
+          <div class="icon-box"><div class="ico" style="width:24px;height:24px;left:12px;top:12px"><span style="inset:0 1.93% 0 1.92%"><img src="assets/icon-lecture.svg" alt=""></span></div></div>
           <div class="card-text"><p>Записаться</p><p>на лекцию</p></div>
         </div>
-        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+        <div class="chevron"><img src="assets/chevron.svg" alt=""></div>
       </a>
 
       <!-- TODO: вставить ссылку — связаться с нами -->
       <a class="card" href="https://t.me/vnetta">
         <span class="card-simple">Связаться с нами</span>
-        <div class="chevron"><img src="https://www.figma.com/api/mcp/asset/ea82ba4c-4677-426d-ba7e-1aa513f8b8d6.svg" alt=""></div>
+        <div class="chevron"><img src="assets/chevron.svg" alt=""></div>
       </a>
     </div>
 
     <div class="illustration">
-      <img src="https://www.figma.com/api/mcp/asset/fd2031fa-c6c4-46de-9bcc-cac92ac3c180.png" alt="Здание главпочтамта" />
+      <img src="assets/illustration.png" alt="Здание главпочтамта" />
     </div>
 
     <div class="footer">
